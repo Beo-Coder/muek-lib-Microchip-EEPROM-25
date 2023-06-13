@@ -26,14 +26,14 @@
 ### Write single byte
 ``eeprom.writeByte(<address>, <data>);``
 
-- **address**: the memory address of the byte e.g. (0xFF)
+- **address**: the memory address of the byte (e.g. 0xFF)
 - **data**: 8-bit data that should be stored
 
 
 ### Write page of bytes
 ``eeprom.writePage(<startAddress>, <data>, <dataLength>);``
 
-- **startAddress**: the memory address for the first byte e.g. (0xFF)
+- **startAddress**: the memory address for the first byte (e.g. 0xFF)
 - **data**: array of 8-bit data
 - **dataLength**: the size of the data array (number of bytes)
 
@@ -42,7 +42,7 @@
 ### Read single byte
 ``eeprom.readByte(<address>);``
 
-- **address**: the memory address of the byte e.g. (0xFF)
+- **address**: the memory address of the byte (e.g. 0xFF)
 
 Returns the 8-bit data of the given address.
 
@@ -51,7 +51,7 @@ Returns the 8-bit data of the given address.
 ### Read multiple bytes
 ``eeprom.readSequentialByte(<startAddress>, <length>);``
 
-- **startAddress**: the memory address of the first byte to read e.g. (0xFF)
+- **startAddress**: the memory address of the first byte to read (e.g. 0xFF)
 - **length**: number of bytes to be read
 
 Return a pointer to an array of 8-bit data with the given size.
@@ -61,7 +61,7 @@ Return a pointer to an array of 8-bit data with the given size.
 ### Update single byte
 ``eeprom.updateByte(<address>, <data>);``
 
-- **address**: the memory address of byte e.g. (0xFF)
+- **address**: the memory address of byte (e.g. 0xFF)
 - **data**: data that should be written to the given address
 
 Returns ``true`` or ``false`` depending on whether the byte was changed or not.
@@ -72,7 +72,7 @@ Returns ``true`` or ``false`` depending on whether the byte was changed or not.
 ### Update multiple bytes
 ``eeprom.updatePage(<startAddress>, <data>, <length>);``
 
-- **startAddress**: the memory address of the first byte e.g. (0xFF)
+- **startAddress**: the memory address of the first byte (e.g. 0xFF)
 - **data**: data array of 8-bit data that should be written to the given address
 - **length**: the size of the data array (number of bytes)
 
